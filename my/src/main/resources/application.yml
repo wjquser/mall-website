@@ -1,0 +1,45 @@
+spring:
+  freemarker:
+   cache: false
+   charset: UTF-8
+   suffix: .ftl
+   enabled: true
+   content-type: text/html
+   template-loader-path: classpath:/templates/
+  #redis:
+    #host: 127.0.0.1
+    #port: 6379
+    #timeout: 20000
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/ymw?ullNamePatternMatchesAll=true&amp;serverTimezone=GMT%2b8?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  #data:
+    #mongodb:
+      #host: localhost
+      #port: 27017
+  #rabbitmq:
+    #host: localhost
+    #port: 5672
+    #username: root
+    #password: root
+    #virtual-host: /root
+  application:
+    name: my
+mybatis:
+  mapper-locations: classpath:com/mr/mapper/*.xml
+  type-aliases-package: com.mr.entity
+#eureka:
+  #client:
+    #serviceUrl:
+      #defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8762
+feign:
+  hystrix:
+    enabled: true
+
+
+
+
