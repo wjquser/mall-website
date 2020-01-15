@@ -25,6 +25,12 @@
 
         <dependency>
             <groupId>com.mr</groupId>
+            <artifactId>shopping</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mr</groupId>
             <artifactId>common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
